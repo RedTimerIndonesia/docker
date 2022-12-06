@@ -11,9 +11,9 @@ RUN apt-get upgrade -y
 RUN apt-get install -y g++-multilib wget git
 
 # install sampctl
-RUN wget https://github.com/Southclaws/sampctl/releases/download/1.10.0/sampctl_1.10.0_linux_amd64.deb
-RUN dpkg -i sampctl_1.10.0_linux_amd64.deb 
-RUN rm sampctl_1.10.0_linux_amd64.deb
+RUN wget https://github.com/Southclaws/sampctl/releases/download/1.11.0/sampctl_1.11.0_linux_amd64.deb
+RUN dpkg -i sampctl_1.11.0_linux_amd64.deb 
+RUN rm sampctl_1.11.0_linux_amd64.deb
 
 # using our working directory
 WORKDIR /app
